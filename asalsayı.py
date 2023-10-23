@@ -3,12 +3,14 @@ x=int(input("ASAL OLUP OLMADIĞINI ÖĞRENMEK İSTEDİĞİNİZ SAYIYI GİRİNİZ
 if x==1:
     print("SAYI ASAL DEĞİLDİR.")
 for i in range(2,x):
-    
-    if(x%i==0):
-        koşul=False
+    y=x%i
+    print(y)
+    if(y==0):
+        koşul=True
         break
-koşul=True
+    else:
+        koşul=False
 if koşul:
-    print("sayı asal ")
+    print("sayı asal değil ")
 else:
-    print("sayı asal değil")
+    print("sayı asal ")
